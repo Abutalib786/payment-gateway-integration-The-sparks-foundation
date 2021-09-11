@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <title>Spark Foundation Donation</title>
+</head>
+<body>
+    <nav class="navbar sticky-top ">
+        <div class="logo">Spark <span style="color:blue;font-weight:bold">Foun</span>dation Donation</div>
+        <label for="" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul id="menuList">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="https://rzp.io/l/cN2PAaX">DONATE US</a></li>
+        </ul>
+        <img src="img/menu.jpg" class="menu-icon"
+        onclick="togglemenu()">
+    </nav>
+    <!---------------------menu-butto-------->
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function togglemenu(){
+            if(menuList.style.maxHeight =="0px")
+            {
+                menuList.style.maxHeight = "450px";
+            }
+            else
+            {
+                menuList.style.maxHeight = "0px";
+            }
+            
+        }
+
+    </script>
+
+	<!-----------------------banner area---------------------->
+<div class="banner">
+	<div class="site_title">
+		<h1>Be part of the good campaign</h1>
+		<h2>LIGHT A CANDLE IN POOR'S RESIDENCE BY DONATION</h2>
+		<P>We make a living by what we get. We make a life by what we give,<br>
+		The meaning of life is to find your gift. The purpose of life is to give it </P>
+		<a href="https://rzp.io/l/cN2PAaX" class="button">DONATE NOW</a>
+	</div>
+</div>
+
+<!--------------about us---------------->
+<div class="column">
+    <h1><span>About</span> Us</h1>   
+    <div class="left-column">
+        <p>Spark foundation is an NGO for poor child education in India. It helps over 10,00,000 childrens and their 
+         their families every year.It has projects on education, healthcare, livelihood and women empowerment,
+        in remote villages and slums across differnet states of india. From the words of Jawaharlal Nehru,children
+        are like bunds in the garden that need to be carefully nurterd,  as they are future citizens of tommorow. 
+        Education acts as the wind beneath the wings for children for grow as healthy and prosperous adults in the future.</p>
+    </div>
+    <div class="right-column">
+        <img src="img/bg.jpg">
+    </div>
+</div>
+<!------------work facilities------->
+<div class="work">
+    <div class="work-content">
+        <h3>Work <span>Fac</span>ilities</h3>
+        <div class="facilities">
+            <p>⇛ Teaching & Education</p>
+            <p>⇛ Medicine & Healthcare</p>
+            <p>⇛ Provide Food to Hungry</p>
+            <p>⇛ Shelter & homeless</p>
+            <p>⇛ Donate a Warm Blanket</p>
+            <p>⇛ Donate Educational Kit</p>
+        </div>
+    </div>
+</div>
+<!-------------frequently asked question-------->
+<div class="question">
+    <h3>Frequently Asked Questions</h3>
+    <div class="question-content">
+        <h1>How shall I get in touch with your team?</h1>
+        <p>For any queries and details, please speak to sparks team at +235481 
+        (10:00am to 9:00pm) or please write to info@sparksfoundation.com </p>
+        <h1>What is the focus area of your work?</h1>
+        <p>The foundation works on health care along with support and dignity to
+         destitute. We also work for education, food, donate warm blanket, emergency
+         medical and disaster relief.</p>
+    </div>
+</div>
+<!------------footer section------->
+<footer id="footer">
+    <div class="social-icon">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a> 
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+    </div>
+    <h3>Copyright 2021, All Rights Reserved<br>
+    E-mail: <span>info@sparksfoundation.com</span></h3>
+</footer>
+
+
+</body>
+</html>

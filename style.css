@@ -1,0 +1,431 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    height: 6.4rem;
+    background: #1b1b1b;;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+}
+nav .logo{
+    font-size: 2rem;
+    color: rgb(221, 202, 26);
+    font-weight: 600;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    margin: 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+nav ul li a:hover{
+    color: #1b1b1b;
+    background: #fff;
+}
+
+nav .menu-btn i{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+nav .menu-btn i{
+    color: #fff;
+    display: none; //------------//
+}
+
+.menu-icon{
+    width: 35px;
+    cursor: pointer;
+    display: none;
+    margin-top: -6rem;
+}
+
+/*-----------------------------------responsive------------------*/
+@media (max-width: 770px) {
+    nav ul{
+        position: fixed;
+        top: 100px;
+        left: 0;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        
+    }
+    nav ul li{
+        margin: 40px 0;
+    }
+    nav ul li a{
+        font-size: 20px;
+        display: block;
+    }
+    nav ul li a:hover{
+        color: cyan;
+        background: none;
+    }
+    .menu-icon{
+    display: block;
+}
+    #menuList{
+    overflow: hidden;
+    transition: 0.5s;
+}
+    nav .logo{
+        font-size: 2rem;
+    }
+}
+/*---------------------------for small screen*/
+@media (max-width: 450px){
+    nav ul{
+        position: fixed;
+        top: 100px;
+        left: 0;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+    } 
+    nav ul li a{
+        font-size: 14px;
+        display: block;
+    }
+    nav .logo{
+        font-size: 1.5rem;
+    }
+    nav .logo span{
+        color: lightslategray;
+    }
+}
+
+ 
+   /*---------------------------banner area-------------*/
+   .banner{
+       background-image: url("img/bg1.jpg");
+       width: 100%;
+       height: 85vh;
+       background-repeat: no-repeat;
+       z-index: 1;
+       background-size: cover;
+   }
+   .site_title{
+       position: absolute;
+       top: 50%;
+       left: 25%;
+       -webkit-transform: translateY(-50%);
+       -ms-transform: translateY(-50%);
+       transform: translateY(-50%);
+       z-index: 2;
+       font-family: sans-serif;
+       margin-top: 3rem;
+   }
+   .site_title h1{
+       font-size: 35px;
+       color: white;
+       margin: 0;
+       font-weight: 650;
+       margin-bottom: 2rem;
+   }
+   .site_title h2{
+
+    font-size: 40px;
+    color: rgb(190, 230, 13);
+    margin: 0;
+    font-weight: 650;
+    margin-left: -5px;
+    margin-top: 3rem;
+ }
+   .site_title p{
+       font-size: 20px;
+       color: white;
+       margin: 0;
+       letter-spacing: 1px;
+       margin-top: 10px;
+       margin-top: 2rem;
+   }
+    .button{
+        background-color: #60bc0f;
+        border: none;
+        color: white; 
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        margin-top: 4rem;
+        margin-left: 20%;
+   }
+   .button:hover{
+        background-color: rgba(63, 81, 87, 0.979);
+        color: #60bc0f;
+   }
+
+   @media (max-width: 770px){
+       .site_title{
+          position: absolute; 
+       }
+       .site_title h1{
+           font-size: 20px;
+           margin-top: 20%;
+       }
+       .site_title h2{
+           font-size: 30px;
+       }
+       .site_title p{
+           font-size: 15px;
+       }
+
+   }
+   @media (max-width: 450px){
+    .site_title{
+        position: absolute; 
+     }
+     .site_title h1{
+         font-size: 20px;
+         margin-top: 20%;
+     }
+     .site_title h2{
+         font-size: 25px;
+     }
+     .site_title p{
+         font-size: 13px;
+     }
+   }
+
+   /*---------------about section--------------------------*/
+   .column{
+       font-family: sans-serif;
+       margin-top: 3rem;
+   }
+   .column h1{
+       text-align: center;
+       font-size: 35px;
+       color: darkgoldenrod;
+   }
+   .column h1 span{
+       color: rgb(28, 62, 156);
+   }
+   .column .left-column {
+       float: left;
+       width: 50%;
+       height: 40vh;
+   }
+   .left-column p{
+       margin-top: 3rem;
+       margin-left: 3rem;
+       line-height: 25px;
+       font-size: 18px;
+       margin-top: 2rem;
+       padding: 10px 10px 20px 10px;
+       border: 1px solid #BFBFBF;
+       background-color: white;
+       box-shadow: 5px 5px 5px #aaaaaa;
+   }
+   .column .right-column img{
+       width: 450px;
+       height: 250px;
+       margin-left: 10%;
+       margin-top: 2rem;
+   }      
+
+ 
+   @media (max-width: 770px){
+       .column .left-column{
+           width: 90%;
+           height: 50%;
+       }
+       .left-column p{
+           font-size: 15px;
+       }
+       .column .right-column{
+           width: 100%;
+           height: 50%;
+       }
+       .right-column img{
+           width: 80%;
+           height: 60%;
+           margin-top: 1rem;
+       }
+   }
+/*---------work section----------*/
+.work{
+    font-family: sans-serif;
+    margin-top: 2rem;
+    margin-left: 10%;
+}
+.work .work-content h3{
+    font-size: 30px;
+    color: rgb(173, 135, 18);
+    text-align: left;
+    text-decoration: none;
+    margin-left: 5%;
+}
+.work .work-content h3 span{
+    color: mediumblue;
+}
+.facilities{
+    margin-top: 2rem;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    width: 25%;
+    height: 45vh;
+}
+.facilities p{
+    padding: 5px;
+    text-align: center;
+}
+@media (max-width: 770px){
+    .work-content h3{
+         margin-left: 5rem;
+    }
+    .facilities{
+        width: 80%;
+        height: 60vh;
+        margin-left: 2rem;
+    }
+    .facilities p{
+        text-align: center;
+        font-size: 20px;
+    }
+}
+/*------------asked questions-----------*/
+.question{
+    font-family: sans-serif;
+    margin-bottom: 10%;
+}
+.question h3{
+    font-size: 25px;
+    color: black;
+    text-align: right;
+    margin-right: 20%;
+    margin-top: -25%;
+}
+.question-content h1{
+  
+    font-size: 20px;
+    padding: 5px;
+}
+.question-content{
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 5px 5px 5px #aaaaaa;
+    max-width: 55%;
+    height: 46vh;
+    margin-left: 40%;
+    overflow: hidden;
+}
+.question-content p{
+    font-size: 15px;
+    padding: 5px;
+    font-weight: 400;
+}
+@media (max-width: 770px){
+    .question{
+        flex-basis: 100%;
+        margin-top: 10rem;
+    }
+    .question h3{
+        font-size: 20px;
+        text-align: center;
+    }
+    .question-content{
+        flex-basis: 100%; 
+        overflow: auto;
+        margin-left: 7rem;
+    }
+}
+/*--------------FOOTER SECTION----*/
+#footer{
+    font-family: sans-serif;
+    background-color: #999999;
+    height: 25vh;
+    margin-top: -5rem;
+}
+#footer .social-icon{
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+}
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    margin-top: 2rem;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+.fa:hover {
+    color: #1b1b1b;
+    transition: 0.3s;
+    background-color: #999999;
+}
+#footer h3{
+    font-size: 15px;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 1rem;
+}
+#footer h3 span{
+    color: rgb(0, 0, 0);
+}
+@media (max-width: 770px){
+    #footer{
+        margin-top: 4rem;
+    }
+}
+
+
+
+
+ 
+      
+
+  
+
